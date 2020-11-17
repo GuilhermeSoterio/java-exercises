@@ -8,12 +8,11 @@ public class Main {
         Locale.setDefault(Locale.US);
 		Scanner input = new Scanner(System.in);
 		
-		double Hora = input.nextDouble();
+		int Hora = input.nextInt();
 		double VelocidadeMedia = input.nextDouble();
-		double Distancia = Hora * VelocidadeMedia;
-		double Combustivel = Distancia / 12;
+		double Combustivel = Hora / VelocidadeMedia;
 		
-		System.out.printf("%.3f%n", Combustivel);
+		System.out.printf("%.3f km/l%n", Combustivel);
 
 		input.close();
     }
