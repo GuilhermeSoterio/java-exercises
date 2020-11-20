@@ -21,12 +21,8 @@ public class Main {
 		}else if(A > 0  && B < 0) {
 			System.out.println("quarto");
 			
-		}else if(A == 0 || B == 0) {
-			System.out.println("");	
-		}
-		
-		
-		} while ((A != 0) && (B != 0));
+			}
+		}while ((A != 0) && (B != 0));
 		
 		input.close();
 	}

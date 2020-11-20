@@ -6,19 +6,17 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		Scanner input = new Scanner(System.in);
-		int perguntas = input.nextInt();
+        int perguntas  = input.nextInt();
 
-			
-			for (int i = 0; i < perguntas; i++) {
-				String perguntando = input.next();
-				if(perguntando != "Where is the book?") {
-					System.out.println("gzus");
-				}else {
-					System.out.println("");
-				}
+        for(int i = 0; i < perguntas; i++) {
+            String perguntando = input.nextLine();
 
-			}
-			
-			input.close();
+            if(perguntando.equals("Where is the book?")) {
+                System.out.println("");
+            } else {
+                System.out.println("gzus");
+            }
+        }
+        input.close();
 	}
 }
